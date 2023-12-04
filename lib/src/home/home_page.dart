@@ -57,7 +57,9 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton.extended(
         icon: const Icon(Icons.edit),
         label: const Text('Novo'),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pushNamed('./task');
+        },
       ),
     );
   }
