@@ -15,13 +15,14 @@ ThemeData get lightTheme => ThemeData(
     segmentedButtonTheme: _lightSegmentedButtonThemeData);
 
 ThemeData get darkTheme => ThemeData(
-    colorScheme: _darkColorScheme,
-    useMaterial3: true,
-    appBarTheme: AppBarTheme(
-      centerTitle: true,
-      backgroundColor: _darkColorScheme.primaryContainer,
-    ),
-    segmentedButtonTheme: _darkSegmentedButtonThemeData);
+      colorScheme: _darkColorScheme,
+      useMaterial3: true,
+      appBarTheme: AppBarTheme(
+        centerTitle: true,
+        backgroundColor: _darkColorScheme.primaryContainer,
+      ),
+      segmentedButtonTheme: _darkSegmentedButtonThemeData,
+    );
 
 SegmentedButtonThemeData get _lightSegmentedButtonThemeData =>
     SegmentedButtonThemeData(
@@ -31,19 +32,29 @@ SegmentedButtonThemeData get _lightSegmentedButtonThemeData =>
             if (states.contains(MaterialState.selected)) {
               return const TextStyle(
                 fontSize: 12,
+                fontWeight: FontWeight.bold,
               );
             }
             return const TextStyle(
               fontSize: 12,
+              fontWeight: FontWeight.normal,
             );
+          },
+        ),
+        foregroundColor: MaterialStateProperty.resolveWith<Color?>(
+          (states) {
+            if (states.contains(MaterialState.selected)) {
+              return _lightColorScheme.onPrimaryContainer;
+            }
+            return _lightColorScheme.primaryContainer;
           },
         ),
         backgroundColor: MaterialStateColor.resolveWith(
           (states) {
             if (states.contains(MaterialState.selected)) {
-              return _lightColorScheme.primaryContainer;
+              return _lightColorScheme.onPrimary;
             }
-            return _lightColorScheme.background;
+            return _lightColorScheme.primary;
           },
         ),
       ),
@@ -55,17 +66,31 @@ SegmentedButtonThemeData get _darkSegmentedButtonThemeData =>
         textStyle: MaterialStateProperty.resolveWith<TextStyle?>(
           (states) {
             if (states.contains(MaterialState.selected)) {
-              return const TextStyle(fontSize: 12);
+              return const TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.bold,
+              );
             }
-            return const TextStyle(fontSize: 12);
+            return const TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.normal,
+            );
+          },
+        ),
+        foregroundColor: MaterialStateProperty.resolveWith<Color?>(
+          (states) {
+            if (states.contains(MaterialState.selected)) {
+              return _darkColorScheme.onPrimaryContainer;
+            }
+            return _darkColorScheme.primaryContainer;
           },
         ),
         backgroundColor: MaterialStateProperty.resolveWith<Color?>(
           (states) {
             if (states.contains(MaterialState.selected)) {
-              return _darkColorScheme.primaryContainer;
+              return _darkColorScheme.onPrimary;
             }
-            return _darkColorScheme.onPrimaryContainer;
+            return _darkColorScheme.primary;
           },
         ),
       ),
