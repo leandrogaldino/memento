@@ -1,136 +1,69 @@
 part of 'themes.dart';
 
-
 const _lightColorScheme = ColorScheme(
-
   brightness: Brightness.light,
-
-  primary: Color(0xFF006496),
-
+  primary: Color(0xFF315DA8),
   onPrimary: Color(0xFFFFFFFF),
-
-  primaryContainer: Color(0xFFCCE5FF),
-
-  onPrimaryContainer: Color(0xFF001E31),
-
-  secondary: Color(0xFF50606F),
-
+  primaryContainer: Color(0xFFD8E2FF),
+  onPrimaryContainer: Color(0xFF001A41),
+  secondary: Color(0xFF565E71),
   onSecondary: Color(0xFFFFFFFF),
-
-  secondaryContainer: Color(0xFFD4E4F6),
-
-  onSecondaryContainer: Color(0xFF0D1D2A),
-
-  tertiary: Color(0xFF66587B),
-
+  secondaryContainer: Color(0xFFDBE2F9),
+  onSecondaryContainer: Color(0xFF141B2C),
+  tertiary: Color(0xFF1A6C31),
   onTertiary: Color(0xFFFFFFFF),
-
-  tertiaryContainer: Color(0xFFECDCFF),
-
-  onTertiaryContainer: Color(0xFF211534),
-
+  tertiaryContainer: Color(0xFFA3F5AB),
+  onTertiaryContainer: Color(0xFF002108),
   error: Color(0xFFBA1A1A),
-
   errorContainer: Color(0xFFFFDAD6),
-
   onError: Color(0xFFFFFFFF),
-
   onErrorContainer: Color(0xFF410002),
-
-  background: Color(0xFFFCFCFF),
-
-  onBackground: Color(0xFF1A1C1E),
-
-  surface: Color(0xFFFCFCFF),
-
-  onSurface: Color(0xFF1A1C1E),
-
-  surfaceVariant: Color(0xFFDEE3EB),
-
-  onSurfaceVariant: Color(0xFF42474E),
-
-  outline: Color(0xFF72787E),
-
-  onInverseSurface: Color(0xFFF0F0F4),
-
-  inverseSurface: Color(0xFF2F3133),
-
-  inversePrimary: Color(0xFF91CDFF),
-
+  background: Color(0xFFFEFBFF),
+  onBackground: Color(0xFF1B1B1F),
+  surface: Color(0xFFFEFBFF),
+  onSurface: Color(0xFF1B1B1F),
+  surfaceVariant: Color(0xFFE1E2EC),
+  onSurfaceVariant: Color(0xFF44474F),
+  outline: Color(0xFF74777F),
+  onInverseSurface: Color(0xFFF2F0F4),
+  inverseSurface: Color(0xFF303033),
+  inversePrimary: Color(0xFFADC6FF),
   shadow: Color(0xFF000000),
-
-  surfaceTint: Color(0xFF006496),
-
-  outlineVariant: Color(0xFFC2C7CE),
-
+  surfaceTint: Color(0xFF315DA8),
+  outlineVariant: Color(0xFFC4C6D0),
   scrim: Color(0xFF000000),
-
 );
-
 
 const _darkColorScheme = ColorScheme(
-
   brightness: Brightness.dark,
-
-  primary: Color(0xFF91CDFF),
-
-  onPrimary: Color(0xFF003350),
-
-  primaryContainer: Color(0xFF004B72),
-
-  onPrimaryContainer: Color(0xFFCCE5FF),
-
-  secondary: Color(0xFFB8C8D9),
-
-  onSecondary: Color(0xFF23323F),
-
-  secondaryContainer: Color(0xFF394856),
-
-  onSecondaryContainer: Color(0xFFD4E4F6),
-
-  tertiary: Color(0xFFD1BFE7),
-
-  onTertiary: Color(0xFF372A4A),
-
-  tertiaryContainer: Color(0xFF4E4162),
-
-  onTertiaryContainer: Color(0xFFECDCFF),
-
+  primary: Color(0xFFADC6FF),
+  onPrimary: Color(0xFF002E69),
+  primaryContainer: Color(0xFF0E448E),
+  onPrimaryContainer: Color(0xFFD8E2FF),
+  secondary: Color(0xFFBFC6DC),
+  onSecondary: Color(0xFF293041),
+  secondaryContainer: Color(0xFF3F4759),
+  onSecondaryContainer: Color(0xFFDBE2F9),
+  tertiary: Color(0xFF88D991),
+  onTertiary: Color(0xFF003913),
+  tertiaryContainer: Color(0xFF00531F),
+  onTertiaryContainer: Color(0xFFA3F5AB),
   error: Color(0xFFFFB4AB),
-
   errorContainer: Color(0xFF93000A),
-
   onError: Color(0xFF690005),
-
   onErrorContainer: Color(0xFFFFDAD6),
-
-  background: Color(0xFF1A1C1E),
-
-  onBackground: Color(0xFFE2E2E5),
-
-  surface: Color(0xFF1A1C1E),
-
-  onSurface: Color(0xFFE2E2E5),
-
-  surfaceVariant: Color(0xFF42474E),
-
-  onSurfaceVariant: Color(0xFFC2C7CE),
-
-  outline: Color(0xFF8C9198),
-
-  onInverseSurface: Color(0xFF1A1C1E),
-
-  inverseSurface: Color(0xFFE2E2E5),
-
-  inversePrimary: Color(0xFF006496),
-
+  background: Color(0xFF1B1B1F),
+  onBackground: Color(0xFFE3E2E6),
+  surface: Color(0xFF1B1B1F),
+  onSurface: Color(0xFFE3E2E6),
+  surfaceVariant: Color(0xFF44474F),
+  onSurfaceVariant: Color(0xFFC4C6D0),
+  outline: Color(0xFF8E9099),
+  onInverseSurface: Color(0xFF1B1B1F),
+  inverseSurface: Color(0xFFE3E2E6),
+  inversePrimary: Color(0xFF315DA8),
   shadow: Color(0xFF000000),
-
-  surfaceTint: Color(0xFF91CDFF),
-
-  outlineVariant: Color(0xFF42474E),
-
+  surfaceTint: Color(0xFFADC6FF),
+  outlineVariant: Color(0xFF44474F),
   scrim: Color(0xFF000000),
-
 );
-

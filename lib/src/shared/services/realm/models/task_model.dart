@@ -10,7 +10,7 @@ class _TaskModel {
 }
 
 @RealmModel()
-class _taskBoard {
+class _TaskBoardModel {
   @PrimaryKey()
   late Uuid id;
   late String title;

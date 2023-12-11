@@ -64,18 +64,18 @@ class TaskModel extends _TaskModel
   }
 }
 
-class taskBoard extends _taskBoard
+class TaskBoardModel extends _TaskBoardModel
     with RealmEntity, RealmObjectBase, RealmObject {
   static var _defaultsSet = false;
 
-  taskBoard(
+  TaskBoardModel(
     Uuid id,
     String title, {
     bool enabled = true,
     Iterable<TaskModel> tasks = const [],
   }) {
     if (!_defaultsSet) {
-      _defaultsSet = RealmObjectBase.setDefaults<taskBoard>({
+      _defaultsSet = RealmObjectBase.setDefaults<TaskBoardModel>({
         'enabled': true,
       });
     }
@@ -86,7 +86,7 @@ class taskBoard extends _taskBoard
         this, 'tasks', RealmList<TaskModel>(tasks));
   }
 
-  taskBoard._();
+  TaskBoardModel._();
 
   @override
   Uuid get id => RealmObjectBase.get<Uuid>(this, 'id') as Uuid;
@@ -111,17 +111,18 @@ class taskBoard extends _taskBoard
   set enabled(bool value) => RealmObjectBase.set(this, 'enabled', value);
 
   @override
-  Stream<RealmObjectChanges<taskBoard>> get changes =>
-      RealmObjectBase.getChanges<taskBoard>(this);
+  Stream<RealmObjectChanges<TaskBoardModel>> get changes =>
+      RealmObjectBase.getChanges<TaskBoardModel>(this);
 
   @override
-  taskBoard freeze() => RealmObjectBase.freezeObject<taskBoard>(this);
+  TaskBoardModel freeze() => RealmObjectBase.freezeObject<TaskBoardModel>(this);
 
   static SchemaObject get schema => _schema ??= _initSchema();
   static SchemaObject? _schema;
   static SchemaObject _initSchema() {
-    RealmObjectBase.registerFactory(taskBoard._);
-    return const SchemaObject(ObjectType.realmObject, taskBoard, 'taskBoard', [
+    RealmObjectBase.registerFactory(TaskBoardModel._);
+    return const SchemaObject(
+        ObjectType.realmObject, TaskBoardModel, 'TaskBoardModel', [
       SchemaProperty('id', RealmPropertyType.uuid, primaryKey: true),
       SchemaProperty('title', RealmPropertyType.string),
       SchemaProperty('tasks', RealmPropertyType.object,
