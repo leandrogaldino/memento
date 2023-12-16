@@ -1,4 +1,4 @@
-import 'package:memento/src/shared/services/realm/models/configuration_model.dart';
+import 'package:memento/src/models/configuration_model.dart';
 import 'package:realm/realm.dart';
 
 abstract class ConfigurationService {

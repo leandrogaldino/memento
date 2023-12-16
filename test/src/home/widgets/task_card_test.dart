@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:memento/src/home/widgets/task_card.dart';
-import 'package:memento/src/shared/services/realm/models/task_model.dart';
+import 'package:memento/src/models/task_model.dart';
+import 'package:memento/src/pages/home/widgets/task_card.dart';
 import 'package:realm/realm.dart';
 
 void main() {

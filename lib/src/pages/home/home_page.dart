@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:memento/src/home/widgets/custom_drawer.dart';
-import 'package:memento/src/home/widgets/task_card.dart';
-import 'package:memento/src/shared/services/realm/models/task_model.dart';
+import 'package:memento/src/models/task_model.dart';
+import 'package:memento/src/pages/home/widgets/custom_drawer.dart';
+import 'package:memento/src/pages/home/widgets/task_card.dart';
 import 'package:memento/src/shared/widgets/user_image_button.dart';
 import 'package:realm/realm.dart';
 

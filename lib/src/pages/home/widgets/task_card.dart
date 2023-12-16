@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:memento/src/shared/services/realm/models/task_model.dart';
+import 'package:memento/src/models/task_model.dart';
 
 enum TaskCardStatus {
   pending(Icons.access_time, 'Pendente'),

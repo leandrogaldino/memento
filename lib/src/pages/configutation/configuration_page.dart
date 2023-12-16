@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
-import 'package:memento/src/shared/store/app_store.dart';
+import 'package:memento/src/store/app_store.dart';
+import 'package:provider/provider.dart';
 
 class ConfigurationPage extends StatefulWidget {
   const ConfigurationPage({super.key});
@@ -12,9 +12,7 @@ class ConfigurationPage extends StatefulWidget {
 class _ConfigurationPageState extends State<ConfigurationPage> {
   @override
   Widget build(BuildContext context) {
-    final appStore = context.watch<AppStore>(
-      (store) => store.themeMode,
-    );
+    final appStore = context.read<AppStore>();
 
     return Scaffold(
       appBar: AppBar(
