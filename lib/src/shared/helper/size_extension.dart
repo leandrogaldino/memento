@@ -1,0 +1,8 @@
+import 'package:flutter/material.dart';
+
+extension SizeExtension on BuildContext {
+  double get screenWidth => MediaQuery.of(this).size.width;
+  double get screenHeight => MediaQuery.of(this).size.height;
+  double screenPercentWidth(double percent) => screenWidth * percent;
+  double screenPercentHeight(double percent) => screenHeight * percent;
+}

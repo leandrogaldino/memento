@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:memento/src/repository/configuration_service.dart';
+import 'package:memento/src/services/configuration_service.dart';
+import 'package:memento/src/services/configuration_service_impl.dart';
 import 'package:memento/src/shared/realm/realm_config.dart';
 import 'package:memento/src/store/app_store.dart';
 import 'package:provider/provider.dart';

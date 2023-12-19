@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:memento/src/models/task_model.dart';
 import 'package:memento/src/pages/home/widgets/custom_drawer.dart';
 import 'package:memento/src/pages/home/widgets/task_card.dart';
+import 'package:memento/src/shared/helper/loader.dart';
 import 'package:memento/src/shared/widgets/user_image_button.dart';
 import 'package:realm/realm.dart';
 
@@ -12,7 +13,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage> with Loader {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

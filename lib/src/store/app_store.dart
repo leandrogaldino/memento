@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:memento/src/repository/configuration_service.dart';
+import 'package:memento/src/services/configuration_service.dart';
 
 class AppStore {
   final themeMode = ValueNotifier(ThemeMode.system);

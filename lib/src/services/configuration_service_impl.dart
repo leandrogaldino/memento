@@ -1,11 +1,6 @@
 import 'package:memento/src/models/configuration_model.dart';
+import 'package:memento/src/services/configuration_service.dart';
 import 'package:realm/realm.dart';
-
-abstract class ConfigurationService {
-  ConfigurationModel getConfiguration();
-  void save(String themeModeName, DateTime? syncDate);
-  void deleteAll();
-}
 
 class ConfigurationServiceImpl extends ConfigurationService {
   final Realm realm;
